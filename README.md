@@ -33,16 +33,27 @@ This project is a full-stack Airbnb clone built using the MERN stack (MongoDB, E
 #Project Structure:-
 
 ├── controllers       # Business logic for handling requests
+
 ├── init              # Initialization scripts (e.g., database connection)
+
 ├── models            # Mongoose schemas for database models (User, Listing, Booking)
+
 ├── public            # Public assets for frontend (images, styles)
+
 ├── routes            # API routes connecting endpoints to controllers
+
 ├── utils             # Helper functions (e.g., data validation)
+
 ├── views             # HTML views for server-side rendering (if applicable)
-│
-├── .env              # Environment variables for secure configuration
+
+├── .env              # Environment variables for secure configuratio
+
 ├── app.js            # Main application file, server setup
+
 ├── cloudConfig.js    # Cloud service configuration (e.g., image storage)
+
 ├── middleware.js     # Custom middleware, e.g., for authentication
+
 ├── package.json      # Project dependencies and scripts
+
 └── schema.js         # Schema configuration or database setup
