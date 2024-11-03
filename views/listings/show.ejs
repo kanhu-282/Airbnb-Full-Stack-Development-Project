@@ -33,7 +33,7 @@ class="btn btn-dark col-1 offset-3 edit-btn"
 </div>
 <% } %>
 <!-- rating -->
-<hr class="col-8 offset-3 mb-3">
+<div class="col-8 offset-3 mb-3">
 
 <div class="card col-6 offset-3 show-card listing-card">
   <% if(currUser) {%>
@@ -84,8 +84,10 @@ class="btn btn-dark col-1 offset-3 edit-btn"
     </form>
     <hr/>
      <% } %>
-     <p><b>All Reviews</b></p>
+    
+     <% if(listing.reviews.length > 0) { %>
   <div class="row">
+    <p><b>All Reviews</b></p>
     <% for(review of listing.reviews){ %>
     <div class="card col-5 ms-3 mb-3">
       <div class="card-body">
@@ -104,5 +106,20 @@ class="btn btn-dark col-1 offset-3 edit-btn"
     </div>
     <% } %>
   </div>
+  <% } %>
 </div>
+<div class="col-6 offset-3 mb-3">
+  <h3>Where you`ll be</h3>
+  <dib id="map"></dib>
+ </div>
 </div>
+<script>
+let mapToken = "<%= process.env.MAP_TOKLE %>"
+console.log(mapToken);
+	mapboxgl.accessToken = mapToken;
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        center: [-74.5, 40], 
+        zoom: 9 
+    });
+</script>
