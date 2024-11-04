@@ -29,6 +29,12 @@ module.exports.showListing = async (req, res) => {
     res.redirect("/listings");
   }
   console.log(listing);
+  let response = await geocodingClient.forwardGeocode({
+    query: listing.location,
+    limit: 1
+  })
+  .send();
+  listing.geometry = response.body.features[0].geometry;
   res.render("listings/show.ejs", { listing });
 };
 //Create Route
@@ -86,4 +92,4 @@ module.exports.destroyListing = async (req, res) => {
   console.log(deletedListing);
   req.flash("success", "Listing Deleted!");
   res.redirect("/listings");
-};
+}
