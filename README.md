@@ -1,6 +1,6 @@
 # wanderlust-
 Airbnb Full-Stack Development Project
-This project is a full-stack Airbnb clone built using the MERN stack (MongoDB, Express.js, React, and Node.js). It aims to replicate essential features of a booking platform, including browsing, filtering, and booking listings. Additionally, the application incorporates an interactive location map feature that allows users to view the geographical location of listings. The project is structured with an MVC (Model-View-Controller) architecture to ensure maintainable and scalable code.
+This project is a full-stack Airbnb clone built using  (MongoDB, Express.js, and Node.js). It aims to replicate essential features of a booking platform including browsing, filtering, and booking listings. Additionally, the application incorporates an interactive location map feature that allows users to view the geographical location of listings. The project is structured with an MVC (Model-View-Controller) architecture to ensure maintainable and scalable code.
 
 #Features:-
 > User Authentication: Secure login and registration with JWT.
@@ -11,7 +11,7 @@ This project is a full-stack Airbnb clone built using the MERN stack (MongoDB, E
 > Responsive Design: Optimized for both mobile and desktop.
 
 #Tech Stack:-
-> Frontend: React.js, with React Router for navigation and Axios for API communication.
+> Frontend:  Html,Css,ejs and Router for navigation and Axios for API communication.
 > Backend: Node.js and Express.js, organized in the MVC structure.
 > Database: MongoDB, using Mongoose for data modeling.
 > Map API: Integrated a map API (e.g., Google Maps API or Mapbox) to display listing locations.
@@ -23,7 +23,7 @@ This project is a full-stack Airbnb clone built using the MERN stack (MongoDB, E
 > Location Map: Used to plot multiple listings on the map, dynamically displaying markers for each property.
 > Filters: Renders available filter options dynamically based on property attributes.
 > Bookings: Displays all user bookings on their profile.
-> 
+
 # Interactive Map Feature
 > The interactive map feature leverages a map API, allowing users to:
 > View the exact location of each listing.
